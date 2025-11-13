@@ -23,11 +23,11 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-200 font-mono overflow-hidden">
+    <div className="min-h-screen bg-black text-gray-200 font-mono overflow-hidden">
       {showDisclaimer && <DisclaimerModal onAccept={handleAcceptDisclaimer} />}
       
       <div className={`filter ${showDisclaimer ? 'blur-sm' : ''} transition-filter duration-300`}>
-        <header className="p-4 bg-gray-900/50 backdrop-blur-sm border-b border-green-500/20 text-center">
+        <header className="p-4 bg-black/50 backdrop-blur-sm border-b border-green-500/20 text-center">
           <h1 className="text-2xl md:text-3xl font-bold text-green-400 tracking-wider">
             Game Value Editor <span className="text-gray-400">[Simulator]</span>
           </h1>
@@ -47,7 +47,7 @@ const App: React.FC = () => {
         )}
       </div>
 
-      <footer className="fixed bottom-0 left-0 right-0 p-2 text-center text-xs text-gray-600 bg-gray-900/50">
+      <footer className="fixed bottom-0 left-0 right-0 p-2 text-center text-xs text-gray-600 bg-black/50">
         <p>This is a simulation for entertainment purposes only. No real game data is accessed or modified.</p>
       </footer>
     </div>

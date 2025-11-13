@@ -73,7 +73,7 @@ const FloatingWindow: React.FC<FloatingWindowProps> = ({ game, onClose }) => {
     >
       <header
         onMouseDown={handleMouseDown}
-        className="flex items-center justify-between p-2 bg-gray-900/80 cursor-grab active:cursor-grabbing rounded-t-md"
+        className="flex items-center justify-between p-2 bg-black/80 cursor-grab active:cursor-grabbing rounded-t-md"
       >
         <div className="flex items-center gap-2">
             <DraggableIcon className="h-5 w-5 text-gray-500" />

@@ -78,7 +78,7 @@ const ValueEditor: React.FC<ValueEditorProps> = ({ game }) => {
             onChange={(e) => setSearchValue(e.target.value)}
             placeholder="e.g., 100"
             disabled={state === 'searching'}
-            className="w-full bg-gray-900/50 border border-gray-600 text-green-300 rounded-md p-2 focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
+            className="w-full bg-black/50 border border-gray-600 text-green-300 rounded-md p-2 focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
           />
           <button
             onClick={handleSearch}
@@ -130,7 +130,7 @@ const ValueEditor: React.FC<ValueEditorProps> = ({ game }) => {
                     value={newValue}
                     onChange={(e) => setNewValue(e.target.value)}
                     disabled={state === 'saving' || state === 'saved'}
-                    className="w-full bg-gray-900/50 border border-gray-600 text-green-300 rounded-md p-2 focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
+                    className="w-full bg-black/50 border border-gray-600 text-green-300 rounded-md p-2 focus:ring-2 focus:ring-green-500 focus:border-green-500 outline-none transition"
                 />
                  <button
                     onClick={handleSave}
